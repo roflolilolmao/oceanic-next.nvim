@@ -105,16 +105,16 @@ local syntax = {
 
   LspDiagnosticsDefaultError = {fg=base._8};
   LspDiagnosticsSignError = {fg=base._8};
-  LspDiagnosticsUnderlineError = {fg=base._8, attr=undercurl};
+  LspDiagnosticsUnderlineError = {attr=undercurl};
   LspDiagnosticsDefaultWarning = {fg=base._A};
   LspDiagnosticsSignWarning = {fg=base._A};
-  LspDiagnosticsUnderlineWarning = {fg=base._A, attr=undercurl};
+  LspDiagnosticsUnderlineWarning = {attr=undercurl};
   LspDiagnosticsDefaultInformation = {fg=base._D};
   LspDiagnosticsSignInformation = {fg=base._D};
-  LspDiagnosticsUnderlineInformation = {fg=base._D, attr=undercurl};
+  LspDiagnosticsUnderlineInformation = {attr=undercurl};
   LspDiagnosticsDefaultHint = {fg=base._C};
   LspDiagnosticsSignHint = {fg=base._C};
-  LspDiagnosticsUnderlineHint = {fg=base._C, attr=undercurl};
+  LspDiagnosticsUnderlineHint = {attr=undercurl};
 
   TSInclude = {fg=base._C};
   TSPunctBracket = {fg=base._C};
