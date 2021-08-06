@@ -19,7 +19,7 @@ The lua plugin:
 
 - loads much faster;
 - has (in my opinion) better defaults for vimdiff; and
-- has colored virtual texts and underline for nvimlsp diagnostics.
+- has colored virtual texts for nvimlsp diagnostics.
 
 ## Installation
 
