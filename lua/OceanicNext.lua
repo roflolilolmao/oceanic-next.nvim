@@ -154,11 +154,12 @@ local syntax = {
   cssBraces = {fg=base._5};
   cssClassName = {fg=base._E};
 
-  DiffRemoved = {fg=base._0, bg=base._8, attr=bold};
-  DiffAdd = {fg=base._B, bg=base._2, attr=bold};
-  DiffChange = {fg=base._7, bg=base._2};
-  DiffDelete = {fg=base._8, bg=base._2};
-  DiffText = {fg=base._D, bg=base._2, attr=bold};
+  -- builtins
+  DiffAdd = {fg=base._B, bg=none};
+  DiffChange = {fg=base._D, bg=none};
+  DiffDelete = {fg=base._8, bg=none};
+  DiffText = {fg=base._D, bg=base._0, attr=bold};
+
   DiffAdded = {fg=base._0, bg=base._B, attr=bold};
   DiffFile = {fg=base._8, bg=base._0};
   DiffNewFile = {fg=base._B, bg=base._0};
