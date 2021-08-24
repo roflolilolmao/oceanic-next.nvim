@@ -46,10 +46,17 @@ local syntax = {
   Visual = {bg=base._2};
   VisualNOS = {fg=base._8};
   WarningMsg = {fg=base._8};
-  WildMenu = {fg=base._7, bg=base._D};
+  WildMenu = {fg=base._0, bg=base._D, attr=bold};
   Title = {fg=base._D};
   Conceal = {fg=base._D, bg=base._0};
+
   Cursor = {fg=base._0, bg=base._5};
+  CursorColumn = {bg=base._1};
+  CursorLine = {bg=base._1, attr=none};
+  CursorLineNr = {fg=base._3, bg=base._1};
+  TermCursor = {fg=base._0, bg=base._5, attr=none};
+  TermCursorNC = {fg=base._0, bg=base._5};
+
   NonText = {fg=base._3};
   Normal = {fg=base._7, bg=base._0};
   EndOfBuffer = {fg=base._5, bg=base._0};
@@ -59,10 +66,6 @@ local syntax = {
   StatusLineNC = {fg=base._3, bg=base._1};
   VertSplit = {fg=base._0, bg=base._2};
   ColorColumn = {bg=base._1};
-  CursorColumn = {bg=base._1};
-  CursorLine = {bg=base._1, attr=none};
-  CursorLineNR = {fg=base._0, bg=base._0};
-  CursorLineNr = {fg=base._3, bg=base._1};
   PMenu = {fg=base._4, bg=base._1};
   PMenuSel = {fg=base._7, bg=base._D};
   PmenuSbar = {bg=base._2};
