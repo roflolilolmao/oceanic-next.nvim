@@ -35,7 +35,7 @@ local syntax = {
   Folded = {fg=base._3, bg=base._1, attr=italic};
   IncSearch = {fg=base._1, bg=base._9, attr=none};
   Macro = {fg=base._8};
-  MatchParen = {fg=base._5, bg=base._3};
+  MatchParen = {fg=base._7, bg=base._2};
   ModeMsg = {fg=base._B};
   MoreMsg = {fg=base._B};
   Question = {fg=base._D};
