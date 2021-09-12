@@ -9,6 +9,8 @@ scheme by voronianski][voronianski].
 
 ## Differences with the vim plugin
 
+Some highlight groups were changed to improve readability.
+
 The original vim plugin:
 
 - supports other plugins;
@@ -17,9 +19,7 @@ The original vim plugin:
 
 The lua plugin:
 
-- loads much faster;
-- has (in my opinion) better defaults for vimdiff; and
-- has colored virtual texts for nvimlsp diagnostics.
+- loads much faster.
 
 ## Installation
 
