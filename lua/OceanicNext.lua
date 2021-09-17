@@ -106,18 +106,15 @@ local syntax = {
   Type = {fg=base._A};
   Typedef = {fg=base._A};
 
-  LspDiagnosticsDefaultError = {fg=base._8};
-  LspDiagnosticsSignError = {fg=base._8};
-  LspDiagnosticsUnderlineError = {attr=undercurl};
-  LspDiagnosticsDefaultWarning = {fg=base._A};
-  LspDiagnosticsSignWarning = {fg=base._A};
-  LspDiagnosticsUnderlineWarning = {attr=undercurl};
-  LspDiagnosticsDefaultInformation = {fg=base._D};
-  LspDiagnosticsSignInformation = {fg=base._D};
-  LspDiagnosticsUnderlineInformation = {attr=undercurl};
-  LspDiagnosticsDefaultHint = {fg=base._C};
-  LspDiagnosticsSignHint = {fg=base._C};
-  LspDiagnosticsUnderlineHint = {attr=undercurl};
+  DiagnosticError = {fg=base._8};
+  DiagnosticWarn = {fg=base._A};
+  DiagnosticInfo = {fg=base._D};
+  DiagnosticHint = {fg=base._C};
+
+  DiagnosticUnderlineError = {attr=underline};
+  DiagnosticUnderlineWarn = {attr=underline};
+  DiagnosticUnderlineInfo = {attr=underline};
+  DiagnosticUnderlineHint = {attr=underline};
 
   TSInclude = {fg=base._C};
   TSPunctBracket = {fg=base._C};
@@ -316,5 +313,20 @@ for group, colour in pairs(syntax) do
     .. format('guisp=', colour.attrsp)
   )
 end
+
+vim.cmd 'hi link LspDiagnosticsDefaultError DiagnosticError'
+vim.cmd 'hi link LspDiagnosticsDefaultWarning DiagnosticWarn'
+vim.cmd 'hi link LspDiagnosticsDefaultInformation DiagnosticInfo'
+vim.cmd 'hi link LspDiagnosticsDefaultHint DiagnosticHint'
+
+vim.cmd 'hi link LspDiagnosticsSignError DiagnosticError'
+vim.cmd 'hi link LspDiagnosticsSignWarning DiagnosticWarn'
+vim.cmd 'hi link LspDiagnosticsSignInformation DiagnosticInfo'
+vim.cmd 'hi link LspDiagnosticsSignHint DiagnosticHint'
+
+vim.cmd 'hi link LspDiagnosticsUnderlineError DiagnosticUnderlineError'
+vim.cmd 'hi link LspDiagnosticsUnderlineWarning DiagnosticUnderlineWarn'
+vim.cmd 'hi link LspDiagnosticsUnderlineInformation DiagnosticUnderlineInfo'
+vim.cmd 'hi link LspDiagnosticsUnderlineHint DiagnosticUnderlineHint'
 
 return syntax
